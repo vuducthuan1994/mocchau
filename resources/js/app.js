@@ -30,7 +30,7 @@ $(document).ready(function() {
         mirror: true,
         delay: 500,
         easing: 'ease-out-back',
-        duration: 2000
+        duration: 2200
     })
     $('#scroll_to_top').click(function(event) {
         event.preventDefault();
