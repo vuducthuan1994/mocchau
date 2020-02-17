@@ -22,7 +22,7 @@
         padding-left: 60px;
         padding-right: 60px;
         padding-bottom: 30px;
-        background-color: white;
+        background-color: #f4eee7;
         position: fixed;
         top: 0px;
         z-index: 99999;
@@ -55,6 +55,8 @@
         padding: .1rem 2.7rem;
         cursor: pointer;
         transition: color .2s ease;
+        -webkit-transition: color .2s ease;
+        -ms-transition: color .2s ease;
         letter-spacing: .2rem;
     }
     
@@ -167,11 +169,11 @@
     }
     
     .u-ul-footer li span:last-child {
-        text-indent: 20px;
+        margin-left: 2rem;
     }
     
     .padding-left-40px {
-        padding-left: 40px;
+        padding-left: 4rem;
     }
     /* END  FOOTER */
     
@@ -243,7 +245,7 @@
         width: 55.4%;
         height: auto;
         left: -27.7%;
-        top: 20vw;
+        top: 25.4vw;
     }
     
     .detail-infomation .info-left .title {
@@ -261,6 +263,19 @@
         color: rgb(125, 115, 114);
         line-height: 1.875;
         text-align: left;
+        margin-bottom: 2.5rem;
+    }
+    
+    .list-group-info {
+        padding-right: 3.5rem;
+    }
+    
+    .list-group-info .d-flex:first-child {
+        margin-bottom: 6rem;
+    }
+    
+    .list-group-info .d-flex:nth-child(2) {
+        margin-bottom: 5rem;
     }
     
     .list-group-info h1 {
@@ -270,15 +285,21 @@
         font-weight: bold;
         line-height: 1.46;
         text-align: left;
+        margin: 0;
     }
     
-    .list-group-info p {
+    .custom-button.block-1 {
+        margin-top: 8.5rem;
+    }
+    
+    .detail-infomation .info-left .list-group-info p {
         font-size: 2.4rem;
         font-family: "Montserrat SemiBold'";
         color: rgb(56, 48, 47);
         font-weight: bold;
         line-height: 1.667;
         text-align: left;
+        margin: 0;
     }
     
     .list-group-info h1 span {
@@ -291,7 +312,7 @@
     }
     
     .header-background-image {
-        padding-top: 105px;
+        padding-top: 110px;
     }
     
     .header-background-image a {
@@ -382,6 +403,178 @@
         color: rgb(125, 115, 114);
         line-height: 1.875;
         margin-bottom: 35px;
+        rotate: 180;
+    }
+    
+    #customNav .am-prev.btn {
+        padding-right: 0;
+    }
+    
+    #customNav svg:hover {
+        fill: #d3a468;
+        transform: scaleX(1.3);
+    }
+    
+    #customNav .am-next svg {
+        transform: rotate(180deg);
+    }
+    
+    #customNav .am-next svg:hover {
+        transform: scaleX(1.3) rotate(180deg);
+    }
+    
+    #customNav svg {
+        width: 50px;
+        height: auto;
+        fill: black;
+        transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+    }
+    
+    .test {
+        width: 1.2rem;
+        height: 40rem;
+        background-image: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
+        background-image: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
+        background-position: 50% 50%;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: auto auto;
+        background-size: auto auto;
+        position: absolute;
+        top: 8.6rem;
+        right: 0;
+        animation: bgHeaderAnimation 2s linear infinite;
+        transform-origin: top;
+    }
+    
+    @keyframes bgHeaderAnimation {
+        from {
+            transform: scaleY(0.15);
+        }
+        to {
+            transform: scaleY(1);
+        }
+    }
+    
+    @-moz-keyframes bgHeaderAnimation {
+        from {
+            transform: scaleY(0.15);
+        }
+        to {
+            transform: scaleY(1);
+        }
+    }
+    
+    @-webkit-keyframes bgHeaderAnimation {
+        from {
+            transform: scaleY(0.15);
+        }
+        to {
+            transform: scaleY(1);
+        }
+    }
+    
+    @-o-keyframes bgHeaderAnimation {
+        from {
+            transform: scaleY(0.15);
+        }
+        to {
+            transform: scaleY(1);
+        }
+    }
+    
+    .custom-button-div {
+        position: relative;
+    }
+    
+    .custom-button-div span {
+        z-index: 2;
+        position: relative;
+        display: inline-block;
+        transform: scale(1);
+        transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+    }
+    
+    .custom-button-div:hover::before {
+        transform: scaleY(1) translateZ(0);
+    }
+    
+    .custom-button-div::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #87533e;
+        transform-origin: top;
+        transform: scaleY(0) translateZ(0);
+        transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    
+    .phone-call:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #d3a468;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: all .6s cubic-bezier(.165, .84, .44, 1);
+        border-radius: 30px;
+    }
+    
+    #scroll_to_top:hover {
+        background-color: #d3a468;
+        transition: all .6s cubic-bezier(.165, .84, .44, 1);
+    }
+    
+    .phone-call:hover .contact-vi {
+        color: white;
+    }
+    
+    .phone-call:hover::before {
+        transform: scaleX(1);
+    }
+    
+    .custom-button-div:hover span {
+        transform: scale(1.2);
+    }
+    
+    .container-slogan-text {
+        position: absolute;
+        top: 8rem;
+        right: 41rem;
+    }
+    
+    .container-slogan-text h1 {
+        font-size: 6rem;
+        font-family: "Playfair Display";
+        color: rgb(244, 238, 231);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.333;
+        text-align: left;
+    }
+    
+    .container-slogan-text h2 {
+        font-size: 2rem;
+        font-family: "Playfair Display";
+        color: rgba(254, 254, 254, 0.702);
+        font-style: italic;
+        line-height: 1.8;
+        text-align: left;
+    }
+    
+    .slogan-text {
+        position: relative;
     }
     
     .phone-call {
@@ -394,6 +587,7 @@
         border-style: solid;
         border-radius: 30px;
         border-right: none;
+        cursor: pointer;
     }
     
     .u-absolute {
@@ -432,7 +626,7 @@
         display: flex;
     }
     
-    .custom-button span {
+    .custom-button-div {
         background-color: #996049;
         font-size: 1.4rem;
         font-family: 'Montserrat Bold';
@@ -547,9 +741,7 @@
     }
     
     .contact-vi {
-        color: #ffe200;
         vertical-align: baseline;
-        left: 30px;
         width: 100%;
         height: 100%;
         z-index: 0;
@@ -560,6 +752,9 @@
         text-align: left;
         text-transform: uppercase;
         line-height: 50px;
+        z-index: 2;
+        position: relative;
+        display: inline-block;
     }
     /* nut alo */
     
@@ -608,7 +803,6 @@
         height: 85px;
         top: -18px;
         right: -18px;
-        background-color: rgba(0, 161, 255, 0.5);
         border-radius: 100%;
         border: 2px solid transparent;
         opacity: .1;
@@ -912,13 +1106,23 @@
         background-color: #d9d2cc;
     }
     
+    .fb-link {
+        cursor: pointer;
+    }
+    
     .more-info .more-info-title:hover {
         color: rgb(153, 96, 73);
     }
     
-    .more-info .more-info-title i {
-        color: black;
+    .more-info .more-info-title svg {
+        fill: black;
+        width: 3.7rem;
         margin-left: 2.5rem;
+        transition: all .5s;
+    }
+    
+    .more-info .more-info-title svg:hover {
+        fill: #d3a468;
     }
     
     .more-info .more-info-title {
@@ -968,6 +1172,16 @@
         padding-bottom: 41rem;
         padding-top: 0;
         margin-top: 25rem;
+    }
+    
+    .text-slider::before {
+        position: absolute;
+        top: -16rem;
+        left: 50%;
+        height: 10rem;
+        width: 2px;
+        background-color: #1a1b1e;
+        content: "";
     }
     
     .project-feed {
@@ -1092,12 +1306,33 @@
     }
     
     .call-footer-right h1 {
-        font-size: 20px;
+        font-size: 2rem;
         font-family: "Playfair Display";
         color: rgba(255, 255, 255, 0.6);
         font-weight: bold;
-        /* line-height: 3.65; */
         text-align: right;
+        letter-spacing: 2px;
+        margin: 0;
+        margin-right: 20px;
+    }
+    
+    .call-footer-right {
+        display: flex;
+    }
+    
+    .call-phone-footer {
+        width: 4.2rem;
+        height: 4.2rem;
+        background: #e5b360 url(../img/phone-icon.png) no-repeat center center;
+        border-radius: 100%;
+        border: 2px solid transparent;
+        opacity: .99;
+        cursor: pointer;
+        margin-top: -0.7rem;
+    }
+    
+    .call-phone-footer:hover {
+        box-shadow: 0rem .8rem 1.6rem 0rem rgba(243, 190, 101, 0.47);
     }
     /* RESPONSIVE */
     
