@@ -278,6 +278,10 @@
         margin-bottom: 5rem;
     }
     
+    .list-group-info .d-flex:nth-child(2) div:last-child {
+        padding-right: 8rem;
+    }
+    
     .list-group-info h1 {
         font-size: 5rem;
         font-family: "Playfair Display";
