@@ -7,6 +7,12 @@
         width: 100%;
     }
     
+    body {
+        overflow-x: hidden;
+        max-width: 1920px;
+        margin: auto;
+    }
+    
     body .container-fluid {
         padding-left: 0px;
         padding-right: 0px;
@@ -26,6 +32,7 @@
         position: fixed;
         top: 0px;
         z-index: 99999;
+        max-width: 1920px;
     }
     
     .btn-to-top {
@@ -145,7 +152,7 @@
         font-size: 1.6rem;
         color: rgba(255, 255, 255, 0.588);
         text-align: left;
-        margin-top: 35px;
+        margin-top: 3.5rem;
         cursor: pointer;
     }
     
