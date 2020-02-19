@@ -21,6 +21,11 @@
 </head>
 
 <body>
+    <div class="pre-loading">
+        <div class="spinner-border text-warning" role="status">
+            <span class="fa-5x  sr-only">Loading...</span>
+        </div>
+    </div>
     <div class="container-fluid">
         <header>
             <div class="container-fluid d-flex justify-content-between menu-container">
@@ -57,7 +62,7 @@
 
         <section class="header-background-image">
             <div class="inner-background-image">
-                <img src="./resources/img/header-image.png" class=" img-fluid object-fit-cover">
+                <img src="./resources/img/header-image.png" class="img-header img-fluid object-fit-cover">
                 <a class="company-logo" href="#"> <img src="./resources/img/company-logo.png" class="img-fluid"></a>
                 <a class="fb-logo" href="#"> <img src="./resources/img/facebook-header.png" class="img-fluid"></a>
                 <div class="container-slogan-text">
@@ -70,16 +75,16 @@
             </div>
         </section>
 
-        <div class="poem text-center">
+        <div data-aos="flip-up" class="poem text-center">
             <img class="img-fluid" src="./resources/img/logo_poem.png">
             <p>
                 ​Có một nơi được gọi là nhà và cũng là nơi trú ẩn bình yên <br> không khói bụi, ồn ào và vội vã. Hãy trở về để cảm nhận một không gian<br> sống riêng tư, sang trọng giữa lòng Châu Âu biệt lập và tiện nghi.<br> Đó là chốn thiên đường lý
                 tưởng để tận hưởng một cuộc sống<br> thời thượng, an nhiên và hạnh phúc.
             </p>
         </div>
-        <div data-aos="fade-down" class="full-width">
+        <div class="full-width">
             <div class="detail-infomation">
-                <div class="info-left">
+                <div data-aos="fade-left" class="info-left">
                     <div class="title">
                         Thưởng Ngoạn <strong>Mỹ Cảnh</strong> <br> <strong>Châu Âu</strong> Ngay Tại Nhà
                     </div>
@@ -124,7 +129,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="info-right">
+                <div data-aos="fade-right" class="info-right">
                     <img class="img-fluid object-fit-cover" src="./resources/img/big-image-detail-right.png">
                     <img class="object-fit-cover" src="./resources/img/small-image-detail-right.png">
                 </div>
@@ -277,7 +282,7 @@
             </div>
         </section>
 
-        <section data-aos="fade-in" class="text-slider">
+        <section data-aos="zoom-in-down" class="text-slider">
             <div class="container-text-slider">
                 <div id="owl-carousel-2" class="owl-carousel">
                     <div class="inner-text-slider">
@@ -348,23 +353,23 @@
                         </ul>
                         <ul class="padding-left-40px width-50 u-ul-footer">
                             <li>Tổng Quan</li>
-                            <li>Giới thiệu</li>
-                            <li>Vị trí</li>
-                            <li>Kiến trúc</li>
+                            <li> <a class="expand footer-menu-item ">Giới thiệu</a></li>
+                            <li> <a class="expand footer-menu-item ">Vị trí</a></li>
+                            <li> <a class="expand footer-menu-item ">Kiến trúc</a></li>
                         </ul>
                     </div>
                     <div class="above-footer-right">
 
                         <ul class="padding-left-40px width-50 u-ul-footer">
                             <li>Tiện ích</li>
-                            <li>Map</li>
-                            <li>Khu lân cận</li>
+                            <li> <a class="expand footer-menu-item ">Map</a></li>
+                            <li> <a class="expand footer-menu-item ">Khu lân cận</a></li>
                         </ul>
 
                         <ul class="width-50 u-ul-footer">
                             <li>Cập nhật</li>
-                            <li>Tin tức</li>
-                            <li>Thư viện</li>
+                            <li> <a class="expand footer-menu-item ">Tin tức</a></li>
+                            <li> <a class="expand footer-menu-item ">Thư viện</a></li>
                             <button id="scroll_to_top" class="btn btn-to-top"><i class="fa fa-3x fa-long-arrow-alt-up" ></i></button>
                         </ul>
 
@@ -395,6 +400,8 @@
     <script src="./resources/js/app.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js "></script>
+
 </body>
 
 </html>
