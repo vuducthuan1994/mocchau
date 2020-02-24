@@ -1,12 +1,13 @@
 $(document).ready(function() {
-
+    var center = isTabletScreen();
     $('#owl-carousel-1').owlCarousel({
         lazyLoad: false,
         autoplay: false,
         loop: true,
         nav: true,
+        center: center,
         navSpeed: 500,
-        items: 3,
+        items: center ? 2 : 3,
         dots: false,
         margin: 40,
         slideSpeed: 300,
@@ -98,4 +99,12 @@ function textSliderController() {
         // Parameters has to be in square bracket '[]'
         owl2.trigger('prev.owl.carousel', [300]);
     });
+}
+
+function isTabletScreen() {
+    if (window.matchMedia('screen and (max-width: 768px)').matches) {
+        return true;
+    } else {
+        return false;
+    }
 }

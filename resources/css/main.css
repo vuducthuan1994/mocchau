@@ -1558,8 +1558,15 @@
                 line-height: 1.875;
             }
             .utilities p.utilities-intro {
-                padding-left: 5.5rem;
-                padding-right: 5.5rem;
+                padding-left: 5.2rem;
+                padding-right: 5.2rem;
+            }
+            .utilities img {
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
+            .design-building-left img {
+                height: auto;
             }
             .design-building {
                 display: block;
@@ -1569,8 +1576,8 @@
             .design-building-left {
                 display: block;
                 width: 100%;
-                padding-left: 5rem;
-                padding-right: 5rem;
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
             }
             .design-building-right {
                 display: inline-block;
@@ -1578,12 +1585,64 @@
                 background-color: #f4eee7;
             }
             .design-building-content {
-                height: 100%;
-                width: 100%;
-                margin-left: 0;
+                width: calc(100% - 10.4rem);
+                margin-left: 5.2rem;
+                margin-right: 5.2rem;
                 background-color: transparent;
-                padding-top: 73px;
-                padding-bottom: 73px;
+                padding: 0;
+                margin-top: -11.6rem;
+            }
+            .design-building-left img {
+                position: relative;
+            }
+            .inner-design-building-content {
+                background-color: white;
+                height: 100%;
+                padding-left: 4rem;
+                padding-top: 0;
+                padding-right: 6.5rem;
+                padding-top: 5rem;
+                padding-bottom: 4rem;
+            }
+            .inner-design-building-content h2 {
+                font-size: 2.8rem;
+            }
+            .inner-design-building-content p {
+                margin-bottom: 4.5rem;
+            }
+            .project-feed {
+                padding: 0;
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
+            .project-feed .inner-project-feed {
+                display: block;
+            }
+            .inner-project-feed .project-feed-content-left {
+                padding: 0;
+                width: 100%;
+            }
+            .inner-project-feed .project-feed-content-right {
+                padding-left: 0;
+                padding-top: 20px;
+                width: 100%;
+            }
+            .project-feed {
+                margin-top: -6rem;
+            }
+            .time-post span {
+                margin-left: 8px;
+            }
+            .inner-footer .below-footer {
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
+            .above-footer {
+                display: block;
+            }
+            .above-footer .above-footer-left,
+            .above-footer .above-footer-right {
+                width: 100%;
             }
         }
         
