@@ -1,4 +1,28 @@
 $(document).ready(function() {
+
+    $('.burgerIcon').hover(function() {
+            TweenMax.to('.burgerLine:first-child', 0.2, { x: -10 });
+            TweenMax.to('.burgerLine:last-child', 0.2, { x: 10 });
+        },
+
+        function() {
+            TweenMax.to('.burgerLine:first-child', 0.2, { x: 0 });
+            TweenMax.to('.burgerLine:last-child', 0.2, { x: 0 });
+        });
+    var tlmenu = new TimelineMax({ paused: true });
+
+    tlmenu.to('.navMobie', 0.3, { autoAlpha: 1 })
+        .staggerFromTo('.navMobie li', 0.5, { y: 100, opacity: 0 }, { y: 0, opacity: 1 }, 0.1);
+    $('.burgerIcon').click(function() {
+        tlmenu.play(0);
+        $('html').addClass('is-main-menu-open');
+    });
+    $('.closeButton').click(function() {
+        tlmenu.reverse(0);
+        $('html').removeClass('is-main-menu-open');
+
+    });
+
     var center = isTabletScreen();
     $('#owl-carousel-1').owlCarousel({
         lazyLoad: false,

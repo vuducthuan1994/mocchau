@@ -29,7 +29,8 @@
     <div class="container-fluid">
         <header>
             <div class="container-fluid d-flex justify-content-between menu-container">
-                <a href="#"><img src="./resources/img/logo.svg.png"></a>
+                <a class="logo-desktop" href="#"><img class="img-fluid" src="./resources/img/logo.svg.png"></a>
+                <a class="logo-mobile" href="#"><img class="img-fluid" src="./resources/img/logo-mobile.png"></a>
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link expand" href="#">Giới thiệu</a>
@@ -56,14 +57,35 @@
                     <div class="quick-alo-ph-circle-fill"></div>
                     <div class="quick-alo-ph-img-circle"> </div>
                 </div>
-                <button class="btn btn-primary">Menu</button>
+                <div class="burgerIcon">
+                    <div class="burgerLine"></div>
+                    <div class="burgerLine"></div>
+                    <div class="burgerLine lineBot"></div>
+                </div>
+                <!-- MENU MOBIE -->
+                <nav class="navMobie">
+                    <div class="container-menu-mobie">
+                        <ul class="navMenu">
+                            <li><a href="#0">PROJECTS</a></li>
+                            <li><a href="#0">E-SHOP</a></li>
+                            <li class="active"><a href="#0">ABOUT US</a></li>
+                            <li><a href="#0">CONTACT</a></li>
+                        </ul>
+
+                        <button class="closeButton btn btn-primary">Tat</button>
+                    </div>
+
+                </nav>
+                <!-- END MENU MOBIE -->
             </div>
         </header>
 
 
         <section class="header-background-image">
             <div class="inner-background-image">
-                <img src="./resources/img/header-image.png" class="img-header img-fluid object-fit-cover">
+                <img src="./resources/img/header-image.png" class="header-desktop img-header img-fluid object-fit-cover">
+                <img src="./resources/img/header-image-mobile.png" class="header-mobile img-header img-fluid object-fit-cover">
+
                 <a class="company-logo" href="#"> <img src="./resources/img/company-logo.png" class="img-fluid"></a>
                 <a class="fb-logo" href="#"> <img src="./resources/img/facebook-header.png" class="img-fluid"></a>
                 <div class="container-slogan-text">
@@ -352,7 +374,7 @@
                             <li><span>M</span> <span>Mall</span></li>
                             <li><span>A</span> <span>But I must explain to you <br> how all this mistaken idea <br> of denounc</span></li>
                         </ul>
-                        <ul class="padding-left-40px width-50 u-ul-footer">
+                        <ul class=" width-50 u-ul-footer">
                             <li>Tổng Quan</li>
                             <li> <a class="expand footer-menu-item ">Giới thiệu</a></li>
                             <li> <a class="expand footer-menu-item ">Vị trí</a></li>
@@ -360,8 +382,7 @@
                         </ul>
                     </div>
                     <div class="above-footer-right">
-
-                        <ul class="padding-left-40px width-50 u-ul-footer">
+                        <ul class=" width-50 u-ul-footer">
                             <li>Tiện ích</li>
                             <li> <a class="expand footer-menu-item ">Map</a></li>
                             <li> <a class="expand footer-menu-item ">Khu lân cận</a></li>
@@ -399,6 +420,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./resources/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js "></script>
