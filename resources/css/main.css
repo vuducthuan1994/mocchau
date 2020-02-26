@@ -368,6 +368,16 @@
             margin-top: 23rem;
         }
         
+        .map-desktop {
+            display: block;
+        }
+        
+        .map-mobile {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+        
         .map-info .container-image-map {
             position: relative;
             width: 47.91%;
@@ -646,7 +656,7 @@
         /* BUTTON */
         
         .button-style-house {
-            width: 240px;
+            width: 24rem;
         }
         
         .button-image-project {
@@ -654,7 +664,7 @@
         }
         
         .button-style-map {
-            width: 240px;
+            width: 24rem;
         }
         
         .custom-button {
@@ -1255,7 +1265,7 @@
             margin: auto;
             background-color: #f4eee7;
             padding: 20px;
-            padding-bottom: 100px;
+            padding-bottom: 10rem;
             display: flex;
         }
         
@@ -1491,20 +1501,74 @@
             z-index: 99;
             visibility: hidden;
             align-items: center;
-            background-color: #16181c;
+            background-color: #403635;
             overflow: scroll;
             top: 0;
             left: 0;
         }
         
+        .container-menu-mobie {
+            padding-top: 34.5rem;
+            text-align: center;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+        
+        .container-menu-mobie ul {
+            list-style: none;
+        }
+        
+        .container-menu-mobie ul li a {
+            text-decoration: none;
+            font-size: 2.8rem;
+            font-family: "Montserrat Medium";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 5;
+            text-align: center;
+            transition: color .3s cubic-bezier(.59, .08, .385, 1);
+        }
+        
+        .container-menu-mobie ul li a:hover {
+            color: #d3a468;
+        }
+        
+        .container-menu-mobie ul hr {
+            background-color: rgb(255, 255, 255);
+            opacity: 0.102;
+        }
+        
+        .phone-call:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #d3a468;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: all .6s cubic-bezier(.165, .84, .44, 1);
+            border-radius: 30px;
+        }
+        
         @media only screen and (max-width: 768px) {
+            .utilities {
+                padding-top: 11rem;
+            }
+            .intro-post .time-post {
+                width: 50%;
+            }
+            .utilities h1 {
+                font-size: 2.8rem;
+            }
             html {
                 font-size: 10px;
             }
             .test {
-                width: 0.6rem;
-                top: 6.6rem;
-                height: 35rem;
+                width: 0.9rem;
+                top: 5.6rem;
+                height: 40rem;
             }
             body header .menu-container {
                 position: inherit;
@@ -1524,8 +1588,15 @@
                 display: inline;
                 z-index: 100;
             }
+            .map-desktop {
+                display: none;
+            }
+            .map-mobile {
+                display: block;
+            }
             .logo-mobile {
                 display: block;
+                width: 16.3rem;
             }
             .logo-desktop {
                 display: none;
@@ -1543,15 +1614,15 @@
                 display: none;
             }
             body header .menu-container {
-                padding-top: 50px;
-                padding-left: 50px;
-                padding-right: 50px;
+                padding-top: 5rem;
+                padding-left: 5rem;
+                padding-right: 5rem;
                 max-width: 750px;
                 background-color: transparent;
             }
             .header-background-image {
                 padding-top: 0;
-                margin-top: -12rem;
+                /* margin-top: -12rem; */
             }
             .container-slogan-text h1 {
                 font-size: 3.6rem;
@@ -1565,8 +1636,8 @@
                 right: 5rem;
             }
             .poem {
-                padding-left: 50px;
-                padding-right: 50px;
+                padding-left: 5rem;
+                padding-right: 5rem;
             }
             .poem p {
                 font-size: 2.2rem;
@@ -1581,8 +1652,8 @@
             .detail-infomation .info-left {
                 padding-right: 0;
                 width: 100%;
-                padding-left: 50px;
-                padding-right: 50px;
+                padding-left: 5rem;
+                padding-right: 5rem;
             }
             .detail-infomation .info-left .title {
                 font-size: 2.8rem;
@@ -1605,7 +1676,7 @@
                 margin-top: 8rem;
             }
             .button-image-project {
-                width: 220px;
+                width: 22rem;
             }
             .detail-infomation .info-right img:nth-child(2) {
                 right: 10px;
@@ -1758,6 +1829,9 @@
         
         @media only screen and (max-width: 500px) {
             html {
-                font-size: 6.6px;
+                font-size: 7px;
+            }
+            .intro-post .time-post {
+                width: 65%;
             }
         }

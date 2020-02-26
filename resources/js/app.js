@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    $(window).resize(function() {
+        if ($(window).width() <= 768) {
+            cssHeader();
+        }
+    });
 
     $('.burgerIcon').hover(function() {
             TweenMax.to('.burgerLine:first-child', 0.2, { x: -10 });
@@ -14,13 +19,22 @@ $(document).ready(function() {
     tlmenu.to('.navMobie', 0.3, { autoAlpha: 1 })
         .staggerFromTo('.navMobie li', 0.5, { y: 100, opacity: 0 }, { y: 0, opacity: 1 }, 0.1);
     $('.burgerIcon').click(function() {
-        tlmenu.play(0);
-        $('html').addClass('is-main-menu-open');
+        if ($('html').hasClass('is-main-menu-open')) {
+            $('html').removeClass('is-main-menu-open');
+            tlmenu.reverse(0);
+        } else {
+            tlmenu.play(0);
+            $('html').addClass('is-main-menu-open');
+        }
     });
     $('.closeButton').click(function() {
         tlmenu.reverse(0);
         $('html').removeClass('is-main-menu-open');
 
+    });
+    $(".navMobie ul li").click(function() {
+        tlmenu.reverse(0);
+        $('html').removeClass('is-main-menu-open');
     });
 
     var center = isTabletScreen();
@@ -56,12 +70,19 @@ $(document).ready(function() {
         return false;
     });
 
-
     newsSliderController();
     textSliderController();
     addAnimationWhenScroll();
+    cssHeader();
     preLoading();
 });
+
+
+
+function cssHeader() {
+    var heightHeader = $("header").height();
+    $(".header-background-image").css("margin-top", -heightHeader);
+}
 
 function preLoading() {
     $(".img-header").on('load', function() {
