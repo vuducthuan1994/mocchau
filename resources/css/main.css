@@ -37,7 +37,7 @@
             background-color: #f4eee7;
             position: fixed;
             top: 0px;
-            z-index: 99999;
+            z-index: 2;
             max-width: 1920px;
         }
         
@@ -88,6 +88,7 @@
         
         .logo-mobile {
             display: none;
+            z-index: 100;
         }
         
         footer {
@@ -425,8 +426,8 @@
         
         .utilities h1 {
             font-family: "Playfair Display";
-            font-size: 42px;
-            margin-bottom: 25px;
+            font-size: 4.2rem;
+            margin-bottom: 2.5rem;
         }
         
         .utilities p.utilities-intro {
@@ -801,7 +802,6 @@
             vertical-align: baseline;
             width: 100%;
             height: 100%;
-            z-index: 0;
             font-weight: bold;
             font-size: 1.8rem;
             font-family: "Montserrat SemiBold";
@@ -1488,7 +1488,7 @@
             position: fixed;
             height: 100vh;
             width: 100%;
-            z-index: 100;
+            z-index: 99;
             visibility: hidden;
             align-items: center;
             background-color: #16181c;
@@ -1501,16 +1501,28 @@
             html {
                 font-size: 10px;
             }
+            .test {
+                width: 0.6rem;
+                top: 6.6rem;
+                height: 35rem;
+            }
+            body header .menu-container {
+                position: inherit;
+            }
             .header-background-image a.company-logo {
                 right: 19rem;
                 top: 5rem;
+                z-index: 100;
             }
             .header-background-image a.fb-logo {
                 top: 5rem;
                 right: 13.6rem;
+                z-index: 100;
+                width: 25px;
             }
             .burgerIcon {
                 display: inline;
+                z-index: 100;
             }
             .logo-mobile {
                 display: block;
@@ -1539,6 +1551,7 @@
             }
             .header-background-image {
                 padding-top: 0;
+                margin-top: -12rem;
             }
             .container-slogan-text h1 {
                 font-size: 3.6rem;
@@ -1548,7 +1561,7 @@
             }
             .container-slogan-text {
                 position: absolute;
-                top: 8rem;
+                top: 16.8rem;
                 right: 5rem;
             }
             .poem {
