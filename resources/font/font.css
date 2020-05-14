@@ -6,7 +6,12 @@
     font-weight: normal;
     src: local('Montserrat Regular'), url('Montserrat-Regular.woff') format('woff');
 }
-
+@font-face {
+    font-family: 'UVF-Didot';
+    font-style: normal;
+    font-weight: normal;
+    src: local('UVF-Didot');
+}
 @font-face {
     font-family: 'Montserrat Italic';
     font-style: normal;

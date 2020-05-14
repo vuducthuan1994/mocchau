@@ -16,6 +16,16 @@ html {
     pointer-events: all !important;
 }
 
+.container-vignette-pattern {
+    display: flex;
+    padding-top: 2.3rem;
+}
+
+.container-vignette-pattern .vignette-pattern-item {
+    width: 25%;
+    height: auto;
+}
+
 @media only screen and (min-width: 1116px) {
     #tin-tuc,
     #gioi-thieu {
@@ -242,13 +252,13 @@ body header .menu-container {
 
 footer {
     clear: both;
-    background-color: #3f3534;
+    background-color: #0e443d;
 }
 
 .inner-footer {
     max-width: 1280px;
     margin: auto;
-    background-color: #3f3534;
+    background-color: inherit;
 }
 
 .inner-footer .below-footer {
@@ -263,15 +273,16 @@ footer {
 .logo-footer-left p {
     float: left;
     font-size: 1.6rem;
-    text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
-    color: #feffff;
     letter-spacing: 2.5px;
+    color: rgba(254, 255, 255, 0.6);
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .logo-footer-left img {
     float: left;
-    margin-right: 15px;
+    margin-left: 1.1rem;
     width: 5rem;
 }
 
@@ -327,7 +338,7 @@ footer {
 .u-ul-footer li:first-child {
     font-size: 1.6rem;
     font-family: 'Open Sans';
-    color: rgb(211, 164, 104);
+    color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
@@ -615,21 +626,30 @@ a.btn {
     margin-top: 15rem;
 }
 
-.poem img {
-    margin-bottom: 3.5rem;
-    width: 8rem;
+.poem .logo-poem {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12rem;
+    top: 1.6rem;
+}
+
+.container-poem-logo {
+    display: inline-block;
 }
 
 .poem p {
-    font-style: italic;
+    color: rgb(62, 86, 84);
     font-family: 'Playfair Display', serif;
     font-size: 2.6rem;
     font-weight: 400;
-    color: rgb(125, 115, 114);
     line-height: 2.308;
     margin-bottom: 0px;
     margin: auto;
-    max-width: 810px;
+    max-width: 825px;
+    text-align: center;
 }
 
 .detail-infomation .info-left {
@@ -799,7 +819,7 @@ a.btn {
 
 .map-info .map-info-content-right {
     width: 52.09%;
-    background-color: #3f3534;
+    background-color: #0d4039;
     padding-left: 8rem;
     margin-top: 8rem;
     position: relative;
@@ -880,7 +900,7 @@ a.btn {
 }
 
 #customNav svg:hover {
-    fill: #d3a468;
+    fill: #0b8171;
     transform: scaleX(1.3);
 }
 
@@ -991,7 +1011,7 @@ a.btn {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #87533e;
+    background: #0b8171;
     transform-origin: top;
     transform: scaleY(0) translateZ(0);
     transition: transform .6s cubic-bezier(.165, .84, .44, 1);
@@ -1003,7 +1023,7 @@ a.btn {
 }
 
 #scroll_to_top:hover {
-    background-color: #d3a468;
+    background-color: #0b8171;
     transition: all .6s cubic-bezier(.165, .84, .44, 1);
     -webkit-transition: all .6s cubic-bezier(.165, .84, .44, 1);
     -moz-transition: all .6s cubic-bezier(.165, .84, .44, 1);
@@ -1128,7 +1148,7 @@ a.btn {
     width: 188px;
     height: 50px;
     padding-left: 30px;
-    border-color: rgb(211, 164, 104);
+    border-color: #4593a5;
     border-width: 1px;
     border-style: solid;
     border-radius: 30px;
@@ -1176,7 +1196,7 @@ a.btn {
 }
 
 .custom-button-div {
-    background-color: #996049;
+    background-color: #159382;
     font-size: 1.4rem;
     font-family: 'Montserrat Bold';
     color: rgb(255, 255, 255);
@@ -1194,7 +1214,7 @@ a.btn {
 .container-arrow {
     width: 7rem;
     text-align: center;
-    background-color: #87533e;
+    background-color: #0b8171;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     cursor: pointer;
@@ -1229,10 +1249,9 @@ a.btn {
 
 .design-building-left img {
     position: absolute;
-}
-
-.design-building-left img {
     height: 100%;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }
 
 .design-building-right {
@@ -1240,7 +1259,7 @@ a.btn {
     display: inline-block;
     width: 37.5%;
     height: 100%;
-    background-color: #f4eee7;
+    background-color: #f7f4f0;
 }
 
 .design-building-content {
@@ -1253,7 +1272,7 @@ a.btn {
 }
 
 .inner-design-building-content {
-    background-color: white;
+    background-color: #0d3f39;
     width: 100%;
     height: 100%;
     padding-left: 80px;
@@ -1344,7 +1363,7 @@ a.btn {
 .expand:after {
     display: block;
     content: "";
-    border-bottom: 2px solid #d3a468;
+    border-bottom: 2px solid #0a867c;
     transform: scaleX(0);
     transition: transform .25s ease-out;
     transform-origin: 100% 50%;
@@ -1353,7 +1372,7 @@ a.btn {
 .nav-item .active:after {
     display: block;
     content: "";
-    border-bottom: 2px solid #d3a468;
+    border-bottom: 2px solid #0a867c;
     transform: scaleX(1);
 }
 
@@ -1365,10 +1384,10 @@ a.btn {
 .inner-design-building-content p {
     font-size: 1.6rem;
     font-family: "Montserrat Regular";
-    color: rgb(125, 115, 114);
     line-height: 1.875;
     text-align: left;
     margin-bottom: 5rem;
+    color: rgba(247, 244, 240, 0.702);
 }
 
 .container-postion-project {
@@ -1382,7 +1401,7 @@ a.btn {
     font-weight: bold;
     font-size: 1.8rem;
     font-family: "Montserrat SemiBold";
-    color: rgb(211, 164, 104);
+    color: #ffffff;
     text-align: left;
     text-transform: uppercase;
     line-height: 50px;
@@ -1399,11 +1418,11 @@ a.btn {
 /* nut alo */
 
 .phone-call:hover {
-    background-color: #d3a468;
+    background-color: #0a867c;
 }
 
 #customNav span:hover {
-    color: #d3a468;
+    color: #0a867c;
 }
 
 #customNav span {
@@ -1431,7 +1450,7 @@ a.btn {
     position: absolute;
     width: 100px;
     height: 100px;
-    border: 2px solid #d3a468;
+    border: 2px solid #0a867c;
     background-color: transparent;
     border-radius: 100%;
     opacity: .1;
@@ -1446,7 +1465,7 @@ a.btn {
 }
 
 .quick-alo-ph-circle-fill {
-    background-color: rgb(246, 202, 98);
+    background-color: #0a867c;
     opacity: .75 !important;
     position: absolute;
     width: 85px;
@@ -1493,7 +1512,7 @@ a.btn {
     height: 50px;
     top: 0;
     right: 0;
-    background: #d3a468 url('../img/phone-icon.png') no-repeat center center;
+    background: #0b8171 url('../img/phone-icon.png') no-repeat center center;
     border-radius: 100%;
     border: 2px solid transparent;
     opacity: .99;
@@ -1746,7 +1765,7 @@ a.btn {
 
 .time-post i {
     font-size: 1.2rem;
-    color: #d3a468;
+    color: #0b8171;
 }
 
 .intro-post h2 {
@@ -1798,7 +1817,7 @@ a.btn {
 }
 
 .more-info .more-info-title svg:hover {
-    fill: #d3a468;
+    fill: #0b8171;
 }
 
 .more-info .more-info-title {
@@ -1819,13 +1838,13 @@ a.btn {
 }
 
 .more-info .more-info-title:hover {
-    color: #d3a468;
+    color: #0b8171;
 }
 
 .bg-position-project {
     padding: 3.3rem 1.75rem;
     border-radius: 50%;
-    background-color: #996049;
+    background-color: #d1a175;
     position: relative;
 }
 
@@ -2257,7 +2276,7 @@ a.btn {
 }
 
 .container-menu-mobie ul li a:hover {
-    color: #d3a468;
+    color: #0b8171;
 }
 
 .container-menu-mobie ul hr {
@@ -2290,7 +2309,7 @@ a.btn {
 
 .owl-dots button.active {
     transform: scale(1.5);
-    background-color: #d3a468 !important;
+    background-color: #0b8171 !important;
 }
 
 @media only screen and (max-width: 768px) {
