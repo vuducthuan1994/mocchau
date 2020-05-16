@@ -19,6 +19,7 @@ html {
 .container-vignette-pattern {
     display: flex;
     padding-top: 2.3rem;
+    opacity: .2;
 }
 
 .container-vignette-pattern .vignette-pattern-item {
@@ -29,10 +30,10 @@ html {
 @media only screen and (min-width: 1116px) {
     #tin-tuc,
     #gioi-thieu {
-        scroll-margin: 110px;
+        scroll-margin: 156px;
     }
     #tien-ich {
-        scroll-margin: 110px;
+        scroll-margin: 156px;
     }
     #thu-vien {
         scroll-margin: 145px;
@@ -41,7 +42,7 @@ html {
         scroll-margin: 160px;
     }
     #vi-tri {
-        scroll-margin: 175px;
+        scroll-margin: 245px;
     }
 }
 
@@ -606,7 +607,7 @@ a.btn {
 }
 
 .logo-379 {
-    padding-top: 12rem;
+    padding-top: 13rem;
     /* width: 9.6rem; */
 }
 
@@ -618,7 +619,7 @@ a.btn {
     display: flex;
     max-width: 1600px;
     margin-left: auto;
-    margin-top: 30rem;
+    margin-top: 17.5rem;
     position: relative;
 }
 
@@ -649,7 +650,7 @@ a.btn {
 }
 
 .detail-infomation .info-left {
-    padding-right: 10%;
+    /* padding-right: 10%; */
     width: 54.75%
 }
 
@@ -680,30 +681,37 @@ a.btn {
     position: absolute;
     width: 92.5%;
     height: 43%;
-    bottom: 0;
+    bottom: -12.15%;
     left: -27.5%;
 }
 
 .detail-infomation .info-left h1:not(.h1-small) {
     font-size: 4.2rem;
-    font-family: 'Playfair Display', serif;
-    color: rgb(56, 48, 47);
+    font-family: "UVFDiot";
+    color: #3e5654;
     line-height: 1.429;
     text-align: left;
     margin-bottom: 2rem;
 }
 
+.detail-infomation .info-left h1:not(.h1-small) strong {
+    font-weight: normal !important;
+    color: #ddb185;
+}
+
 .detail-infomation .info-left p {
+    max-width: 715px;
     font-size: 1.6rem;
     font-family: "Montserrat Regular";
-    color: rgb(125, 115, 114);
+    color: rgba(62, 86, 84, 0.702);
     line-height: 1.875;
     text-align: left;
     margin-bottom: 2.5rem;
 }
 
 .list-group-info {
-    padding-right: 3.5rem;
+    /* padding-right: 3.5rem; */
+    max-width: 680px;
 }
 
 .list-group-info .d-flex:first-child {
@@ -715,7 +723,7 @@ a.btn {
 }
 
 .list-group-info .d-flex:nth-child(2) div:last-child {
-    padding-right: 8rem;
+    padding-right: 9rem;
 }
 
 .list-group-info h1 {
@@ -734,8 +742,8 @@ a.btn {
 
 .detail-infomation .info-left .list-group-info p {
     font-size: 2.4rem;
-    font-family: "Montserrat SemiBold'";
-    color: rgb(56, 48, 47);
+    font-family: "Montserrat SemiBold";
+    color: rgb(62, 86, 84);
     font-weight: bold;
     line-height: 1.667;
     text-align: left;
@@ -764,6 +772,21 @@ a.btn {
         background: transparent url('../img/banner_mobile.png') no-repeat scroll center center;
         height: 100vh;
         background-size: cover;
+    }
+}
+
+.container-hoa-van-trai {
+    position: absolute;
+    right: 0;
+    top: -2.5rem;
+    max-width: 225px;
+    width: 11.71875vw;
+    opacity: .2;
+}
+
+@media only screen and (max-width: 1600px) {
+    .container-hoa-van-trai {
+        display: none;
     }
 }
 
@@ -879,7 +902,7 @@ a.btn {
 }
 
 .map-info {
-    padding-bottom: 21rem;
+    padding-bottom: 13.5rem;
 }
 
 .utilities h1 {
@@ -1208,7 +1231,7 @@ a.btn {
 .custom-button-div {
     background-color: #159382;
     font-size: 1.4rem;
-    font-family: 'Montserrat Bold';
+    font-family: "Montserrat Bold";
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
@@ -1299,7 +1322,6 @@ a.btn {
     height: 100%;
     padding-left: 8rem;
     padding-top: 8rem;
-    padding-right: 8rem;
     position: relative;
 }
 
@@ -1411,6 +1433,7 @@ a.btn {
     text-align: left;
     margin-bottom: 5rem;
     color: rgba(247, 244, 240, 0.702);
+    max-width: 470px;
 }
 
 .container-postion-project {
@@ -1490,10 +1513,21 @@ a.btn {
 .vignette-pattern-left {
     position: absolute;
     left: 0;
+    top: -10rem;
+    max-width: 250px;
+    width: 13.02vw;
+    opacity: .2;
+}
+
+@media only screen and (max-width: 1600px) {
+    .vignette-pattern-left {
+        display: none;
+    }
 }
 
 #gioi-thieu {
-    background-color: #f7f4f0
+    background-color: #f7f4f0;
+    position: relative;
 }
 
 .quick-alo-ph-circle-fill {
@@ -1902,7 +1936,7 @@ a.btn {
 }
 
 .project-feed {
-    margin-top: -26.3rem;
+    margin-top: 0;
 }
 
 .container-logo-niem-tin-tron-ven {
@@ -1918,7 +1952,7 @@ a.btn {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-bottom: 12rem;
+    padding-bottom: 10rem;
     padding-top: 0;
     margin-top: 5.5rem;
     position: relative;
@@ -2122,23 +2156,28 @@ a.btn {
 
 .inner-text-slider h1 {
     font-size: 3.8rem;
-    font-family: "Playfair Display";
-    color: rgb(62, 53, 52);
+    font-family: "UVFDiot";
+    color: #3e5654;
     font-weight: bold;
     line-height: 1.579;
     text-align: center;
-    margin-bottom: 17rem;
+    margin-bottom: 18rem;
+}
+
+.inner-text-slider h1 strong {
+    font-weight: normal !important;
+    color: #ddb185;
 }
 
 .inner-text-slider p {
     font-size: 2.4rem;
     font-family: "Montserrat Regular";
-    color: rgb(40, 40, 40);
     line-height: 2.083;
     text-align: center;
     margin-bottom: 0;
     max-width: 960px;
     margin: auto;
+    color: rgb(62, 86, 84);
 }
 
 .text-slider h2 {
