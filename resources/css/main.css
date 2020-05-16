@@ -622,10 +622,6 @@ a.btn {
     position: relative;
 }
 
-.poem {
-    margin-top: 15rem;
-}
-
 .poem .logo-poem {
     position: absolute;
     left: 0;
@@ -758,7 +754,7 @@ a.btn {
 
 .header-background-image {
     background: transparent url('../img/banner_desktop.png') no-repeat scroll center center;
-    height: 100vh;
+    height: calc(100vh + 105px);
     background-size: cover;
 }
 
