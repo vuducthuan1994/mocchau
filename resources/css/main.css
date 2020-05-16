@@ -665,6 +665,7 @@ a.btn {
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 1rem;
 }
 
 
@@ -677,8 +678,8 @@ a.btn {
 
 .detail-infomation .info-right img:nth-child(2) {
     position: absolute;
-    width: 55.4%;
-    height: 45%;
+    width: 92.5%;
+    height: 43%;
     bottom: 0;
     left: -27.5%;
 }
@@ -840,12 +841,17 @@ a.btn {
 } */
 
 .map-info-content-right h1 {
-    font-size: 3.8rem;
-    font-family: "Playfair Display";
+    font-size: 4.2rem;
+    font-family: "UVFDiot";
     color: rgb(255, 255, 255);
     line-height: 1.579;
     text-align: left;
     margin-top: 9rem;
+}
+
+.map-info-content-right h1 strong {
+    color: #ddb185;
+    font-weight: normal !important;
 }
 
 .map-info-content-right p {
@@ -877,9 +883,17 @@ a.btn {
 }
 
 .utilities h1 {
-    font-family: "Playfair Display";
+    font-family: "UVFDiot";
     font-size: 4.2rem;
+    font-weight: normal;
     margin-bottom: 2.5rem;
+    color: #ddb185;
+    line-height: 1.429;
+}
+
+.utilities h1 strong {
+    font-weight: normal !important;
+    color: rgb(62, 86, 84);
 }
 
 .utilities p {
@@ -1056,11 +1070,10 @@ a.btn {
 }
 
 .container-slogan-text h1 {
-    font-size: 6rem;
-    font-family: "Playfair Display";
-    /* color: rgba(255, 255, 255, 0.3); */
-    color: rgb(244, 238, 231);
-    font-weight: bold;
+    font-size: 7rem;
+    font-family: "UVFDidot";
+    color: rgb(255, 255, 255);
+    font-weight: normal;
     line-height: 1.333;
     text-align: left;
     background: #222 -webkit-gradient(linear, left top, right top, from(#fff), to(#fff), color-stop(0.5, #fff)) 0 0 no-repeat;
@@ -1074,7 +1087,7 @@ a.btn {
     -webkit-animation-name: shine;
     -webkit-animation-duration: 1s;
     -webkit-animation-iteration-count: infinite;
-    /* text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); */
+    text-shadow: 0px 2px 6px rgba(63, 108, 152, 0.56);
 }
 
 @-moz-keyframes shine {
@@ -1132,7 +1145,7 @@ a.btn {
     font-style: italic;
     line-height: 1.8;
     text-align: left;
-    letter-spacing: 2.5px;
+    letter-spacing: 5px;
     font-weight: 400;
 }
 
@@ -1735,9 +1748,17 @@ a.btn {
 
 .title-news h2 {
     font-size: 3.8rem;
-    font-family: "Playfair Display";
-    color: rgb(62, 53, 52);
     margin: 0;
+    font-family: "UVFDidot";
+    color: #3e5654;
+    line-height: 1.579;
+    text-align: left;
+    font-weight: bold;
+}
+
+.title-news h2 strong {
+    font-weight: bold !important;
+    color: rgb(221, 177, 133);
 }
 
 .intro-post .image-post-container {
@@ -2065,10 +2086,9 @@ a.btn {
     right: 0;
     bottom: 3rem;
     font-size: 2.2rem;
-    font-family: "Playfair Display Bold";
+    font-family: "UVFDidot";
     color: rgb(255, 254, 254);
     font-style: normal;
-    text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 0;
 }

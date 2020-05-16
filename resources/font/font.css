@@ -7,10 +7,10 @@
     src: local('Montserrat Regular'), url('Montserrat-Regular.woff') format('woff');
 }
 @font-face {
-    font-family: 'UVF-Didot';
+    font-family: 'UVFDidot';
     font-style: normal;
     font-weight: normal;
-    src: local('UVF-Didot');
+    src:   url('UVF-Didot.ttf')  format('truetype');
 }
 @font-face {
     font-family: 'Montserrat Italic';
