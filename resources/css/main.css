@@ -1328,10 +1328,15 @@ a.btn {
 .inner-design-building-content h1 {
     text-align: left;
     font-size: 4.2rem;
-    font-family: "Playfair Display";
+    font-family: "UVFDiot";
     color: rgb(255, 255, 255);
     line-height: 1.429;
     margin-bottom: 1.5rem;
+}
+
+.inner-design-building-content h1 strong {
+    font-weight: normal !important;
+    color: #ddb185;
 }
 
 .footer-menu-item {
