@@ -126,6 +126,8 @@ function preLoadController() {
         duration: 6500,
         step: function() {
             if (this.Counter >= 50) {
+                setAnimationForSloganWhenFirstScroll();
+                initAnimationForAllSection();
                 $('html').removeClass('is-main-menu-open');
 
             }
@@ -133,14 +135,8 @@ function preLoadController() {
         },
         start: function() {
             $('html').addClass('is-main-menu-open');
-            setAnimationForSloganWhenFirstScroll();
-
-            initAnimationForAllSection();
         },
         complete: function() {
-
-
-
             $('#loader').css("display", "none");
         }
     });
