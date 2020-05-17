@@ -264,7 +264,7 @@ footer {
 
 .inner-footer .below-footer {
     height: 82px;
-    border-top: solid 1px #574f4f;
+    border-top: solid 1px #2d5c57;
     padding-top: 30px;
     max-width: 1280px;
     width: 100%;
@@ -635,6 +635,7 @@ a.btn {
 
 .container-poem-logo {
     display: inline-block;
+    position: relative;
 }
 
 .poem p {
@@ -728,12 +729,12 @@ a.btn {
 
 .list-group-info h1 {
     font-size: 5rem;
-    font-family: "Playfair Display";
-    color: rgb(211, 164, 104);
-    font-weight: bold;
+    font-family: "Playfair Display Bold";
+    color: rgb(221, 177, 133);
     line-height: 1.46;
     text-align: left;
     margin: 0;
+    font-weight: bold;
 }
 
 .custom-button.block-1 {
@@ -805,8 +806,8 @@ a.btn {
 }
 
 .header-background-image a.fb-logo {
-    top: 250px;
-    right: 70px;
+    top: 25rem;
+    right: 7rem;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -956,13 +957,12 @@ a.btn {
     -o-transition: transform .6s cubic-bezier(.165, .84, .44, 1);
 }
 
-
-/* .test {
-    width: 1.2rem;
-    height: 38rem;
-    background-image: -webkit-linear-gradient(-90deg, rgb(244, 238, 231)0, rgba(255, 255, 255, 0) 100%);
-    background-image: -moz-linear-gradient(180deg, rgb(244, 238, 231)0, rgba(255, 255, 255, 0) 100%);
-    background-image: linear-gradient(180deg, rgb(244, 238, 231)0, rgba(255, 255, 255, 0) 100%);
+.test {
+    width: 0.8rem;
+    height: 36rem;
+    background-image: -webkit-linear-gradient(-90deg, #dcb085, rgba(255, 255, 255, 0) 100%);
+    background-image: -moz-linear-gradient(180deg, #dcb085, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(180deg, #dcb085, rgba(255, 255, 255, 0) 100%);
     background-position: 50% 50%;
     -webkit-background-origin: padding-box;
     background-origin: padding-box;
@@ -971,15 +971,15 @@ a.btn {
     -webkit-background-size: auto auto;
     background-size: auto auto;
     position: absolute;
-    top: 18.2rem;
-    right: .5rem;
+    top: 20rem;
+    right: 0.6rem;
     transform-origin: top;
     transform: scaleY(0);
     transition: transform 2s cubic-bezier(.165, .84, .44, 1);
     -webkit-transition: transform 2s cubic-bezier(.165, .84, .44, 1);
     -moz-transition: transform 2s cubic-bezier(.165, .84, .44, 1);
     -o-transition: transform 2s cubic-bezier(.165, .84, .44, 1);
-} */
+}
 
 
 /* @keyframes bgHeaderAnimation {
@@ -1092,73 +1092,24 @@ a.btn {
     }
 }
 
+@media only screen and (max-width: 1025px) {
+    .test {
+        display: none !important;
+    }
+}
+
 .container-slogan-text h1 {
     font-size: 7rem;
     font-family: "UVFDidot";
-    color: rgb(255, 255, 255);
+    -webkit-text-fill-color: transparent;
     font-weight: normal;
     line-height: 1.333;
     text-align: left;
-    background: #222 -webkit-gradient(linear, left top, right top, from(#fff), to(#fff), color-stop(0.5, #fff)) 0 0 no-repeat;
-    background-size: 200px;
-    background-clip: text;
-    animation-name: shine;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    -webkit-background-size: 200px;
+    margin: 0;
+    font-weight: bold;
+    background: -webkit-linear-gradient( #f5e7d9, #dcad7d);
     -webkit-background-clip: text;
-    -webkit-animation-name: shine;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-iteration-count: infinite;
-    text-shadow: 0px 2px 6px rgba(63, 108, 152, 0.56);
-}
-
-@-moz-keyframes shine {
-    0%,
-    10% {
-        background-position: -1000px;
-    }
-    20% {
-        background-position: top left;
-    }
-    90% {
-        background-position: top right;
-    }
-    100% {
-        background-position: 1000px;
-    }
-}
-
-@-webkit-keyframes shine {
-    0%,
-    10% {
-        background-position: -1000px;
-    }
-    20% {
-        background-position: top left;
-    }
-    90% {
-        background-position: top right;
-    }
-    100% {
-        background-position: 1000px;
-    }
-}
-
-@-o-keyframes shine {
-    0%,
-    10% {
-        background-position: -1000px;
-    }
-    20% {
-        background-position: top left;
-    }
-    90% {
-        background-position: top right;
-    }
-    100% {
-        background-position: 1000px;
-    }
+    background-clip: text;
 }
 
 .container-slogan-text h2 {
@@ -1264,7 +1215,7 @@ a.btn {
 
 .design-building {
     position: relative;
-    background-color: #f4eee7;
+    background-color: #f7f4f0;
     display: flex;
     display: -ms-flexbox;
     height: 734px;
@@ -1360,9 +1311,9 @@ a.btn {
     bottom: 0;
     width: 100%;
     height: 50%;
-    background: #E3DFD2;
+    background: #0d3f39;
     z-index: 1;
-    animation: revealBot 0.3s 3s forwards ease-out;
+    animation: revealBot 0.5s 3s forwards ease-out;
 }
 
 .count {
@@ -1372,10 +1323,11 @@ a.btn {
     bottom: 50%;
     left: 0;
     display: flex;
+    color: #ddb185;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    background: #E3DFD2;
+    background: #0d3f39;
     animation: revealTop 0.3s 3s forwards ease-out;
     z-index: 2;
     font-family: "Montserrat Regular";
@@ -1385,7 +1337,7 @@ a.btn {
 .count::after {
     content: '';
     width: 100%;
-    color: rgb(211, 164, 104);
+    color: #ffffff;
     border-bottom: 2px solid;
     transform-origin: 0 50%;
     transform: scale3d(0, 1, 1);
@@ -1437,8 +1389,8 @@ a.btn {
     line-height: 1.875;
     text-align: left;
     margin-bottom: 5rem;
-    color: rgba(247, 244, 240, 0.702);
     max-width: 470px;
+    color: rgba(247, 244, 240, 0.702);
 }
 
 .container-postion-project {
@@ -2488,8 +2440,8 @@ a.btn {
         font-size: 2.8rem;
     }
     .test {
-        width: 0.9rem;
-        top: 11.3rem;
+        width: 0.5rem;
+        top: 11rem;
         height: 26rem;
         right: 0.2rem;
     }
@@ -2681,7 +2633,7 @@ a.btn {
         position: relative;
     }
     .inner-design-building-content {
-        background-color: white;
+        background-color: #0d3f39;
         height: 100%;
         padding-left: 4rem;
         padding-top: 0;

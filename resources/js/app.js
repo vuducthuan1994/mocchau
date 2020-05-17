@@ -122,19 +122,25 @@ function activeRoute() {
 
 function preLoadController() {
     var count = $('.count');
-    var loader = $('#loader');
     $({ Counter: 0 }).animate({ Counter: count.text() }, {
-        duration: 5500,
+        duration: 6500,
         step: function() {
+            if (this.Counter >= 50) {
+                $('html').removeClass('is-main-menu-open');
+
+            }
             count.text(Math.ceil(this.Counter) + "%");
         },
         start: function() {
             $('html').addClass('is-main-menu-open');
+            setAnimationForSloganWhenFirstScroll();
+
+            initAnimationForAllSection();
         },
         complete: function() {
-            setAnimationForSloganWhenFirstScroll();
-            initAnimationForAllSection();
-            $('html').removeClass('is-main-menu-open');
+
+
+
             $('#loader').css("display", "none");
         }
     });
