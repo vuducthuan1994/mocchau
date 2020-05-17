@@ -7,6 +7,10 @@ html {
     -webkit-overflow-scrolling: touch;
 }
 
+#vi-tri {
+    position: relative;
+}
+
 .description-project {
     width: 100%;
 }
@@ -903,7 +907,7 @@ a.btn {
 }
 
 .map-info {
-    padding-bottom: 13.5rem;
+    margin-bottom: 13.5rem;
 }
 
 .utilities h1 {
@@ -1470,10 +1474,10 @@ a.btn {
 .vignette-pattern-left {
     position: absolute;
     left: 0;
-    top: -10rem;
+    bottom: 100%;
     max-width: 250px;
     width: 13.02vw;
-    opacity: .2;
+    opacity: .2 !important;
 }
 
 @media only screen and (max-width: 1600px) {
