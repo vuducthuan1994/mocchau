@@ -2417,7 +2417,7 @@ a.btn {
         padding-top: 6.5rem;
     }
     .text-slider {
-        background: transparent url('../../static/niem_tin_tron_ven_mobile.png') no-repeat scroll center center;
+        background: transparent url('../img/niem_tin_tron_ven_mobile.png') no-repeat scroll center center;
         padding-bottom: 0;
         padding-top: 9rem;
         background-size: cover;
