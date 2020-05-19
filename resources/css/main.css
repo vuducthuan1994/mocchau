@@ -785,15 +785,59 @@ a.btn {
     right: 0;
     top: -2.5rem;
     max-width: 225px;
-    width: 11.71875vw;
     opacity: .2;
+}
+
+
+/* RESPONSIVE VIGNETTE */
+
+@media only screen and (max-width: 1920px) {
+    .container-hoa-van-trai {
+        right: -11rem;
+    }
+    #vi-tri .vignette-pattern-left {
+        left: -11rem;
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    .container-hoa-van-trai {
+        right: -13rem;
+    }
+    #vi-tri .vignette-pattern-left {
+        left: -13rem;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .container-hoa-van-trai {
+        right: -15rem;
+    }
+    #vi-tri .vignette-pattern-left {
+        left: -15rem;
+    }
 }
 
 @media only screen and (max-width: 1600px) {
     .container-hoa-van-trai {
         display: none;
     }
+    #vi-tri .vignette-pattern-left {
+        display: none;
+    }
+    .design-building-content .inner-design-building-content p {
+        max-width: 400px;
+    }
 }
+
+@media only screen and (max-width: 1600px) {
+    .inner-design-building-content .container-pattern-design-building {
+        right: -11rem;
+    }
+}
+
+
+/* DONE RESPONSIVE VIGNETTE */
 
 .header-background-image a {
     position: fixed;
@@ -1476,7 +1520,6 @@ a.btn {
     left: 0;
     bottom: 100%;
     max-width: 250px;
-    width: 13.02vw;
     opacity: .2 !important;
 }
 
