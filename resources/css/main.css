@@ -37,6 +37,10 @@ html {
     height: auto;
 }
 
+.tong-dien-tich-quy-hoach {
+    max-width: 242px !important;
+}
+
 @media only screen and (min-width: 1116px) {
     #tin-tuc,
     #gioi-thieu {
@@ -301,24 +305,16 @@ footer {
 
 .above-footer {
     position: relative;
-    display: flex;
     background-color: inherit;
     max-width: 1280px;
     width: 100%;
     text-align: center;
     padding-top: 10rem;
     padding-bottom: 11rem;
-}
-
-.above-footer .above-footer-left,
-.above-footer .above-footer-right {
+    display: -ms-flexbox;
     display: flex;
-    height: auto;
-    width: 50%;
-}
-
-.width-50 {
-    width: 50%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .container-text-slider {
@@ -326,8 +322,12 @@ footer {
     position: relative;
 }
 
+.footer-item {
+    width: 25%;
+}
+
 .u-ul-footer {
-    width: 50%;
+    width: 25%;
     height: auto;
     margin: 0;
     padding: 0;
@@ -369,14 +369,6 @@ footer {
 
 .u-ul-footer li span:last-child {
     margin-left: 2rem;
-}
-
-.above-footer-left ul:nth-child(2) {
-    padding-left: 4rem;
-}
-
-.above-footer-right ul:nth-child(1) {
-    padding-left: 4rem;
 }
 
 
@@ -735,9 +727,10 @@ a.btn {
     margin-bottom: 5rem;
 }
 
-.list-group-info .d-flex:nth-child(2) div:last-child {
+
+/* .list-group-info .d-flex:nth-child(2) div:last-child {
     padding-right: 9rem;
-}
+} */
 
 .list-group-info h1 {
     font-size: 5rem;
@@ -1886,10 +1879,6 @@ a.btn {
     background-color: #d9d2cc;
 }
 
-.above-footer-left .u-ul-footer li:first-child img {
-    width: 16rem;
-}
-
 .fb-link {
     cursor: pointer;
     width: 3.5rem;
@@ -1962,6 +1951,15 @@ a.btn {
     right: 0;
     margin: 0 auto;
     margin-bottom: 3rem;
+}
+
+.logo-maison-footer {
+    background: transparent url('../img/maison-footer.png') no-repeat scroll center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 15.1rem;
+    height: 4.2rem;
 }
 
 .text-slider {
@@ -2414,12 +2412,35 @@ a.btn {
 }
 
 @media only screen and (max-width: 768px) {
+    .u-ul-footer li:not(:first-child) {
+        font-size: 1.6rem;
+        font-family: "Montserrat Regular";
+        color: rgba(255, 255, 255, 0.588);
+        line-height: 2.5;
+        text-align: left;
+    }
+    .logo-maison-footer {
+        background: transparent url('../img/maison-footer-mobile.png') no-repeat scroll center center;
+        width: 10rem;
+        height: 8rem;
+        margin: auto;
+    }
+    .container-MA {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    .container-MA span {
+        display: block;
+    }
     .detail-infomation .info-left .left {
         display: flex;
     }
     .detail-infomation .info-left .left .inner-left,
     .detail-infomation .info-left .left .inner-right {
         width: 50%;
+    }
+    .detail-infomation .info-left .left .inner-right {
+        padding-left: 2.6rem;
     }
     .logo-desktop {
         margin-top: 0;
@@ -2655,14 +2676,14 @@ a.btn {
     .detail-infomation .info-left {
         margin-top: 14.3rem;
         width: 100%;
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 4.4rem;
+        padding-right: 4.4rem;
     }
     .detail-infomation .info-left h1:first-child {
         font-size: 2.8rem;
     }
     .detail-infomation .info-left .list-group-info p {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
     .list-group-info h1 {
         font-size: 4.2rem;
@@ -2738,36 +2759,36 @@ a.btn {
         padding-right: 5rem;
     }
     .above-footer {
-        display: block;
+        display: flex;
         max-width: unset;
         padding-left: 5rem;
         padding-right: 5rem;
         padding-bottom: 7.5rem;
     }
-    .above-footer .above-footer-left,
-    .above-footer .above-footer-right {
-        width: 100%;
+    .u-ul-footer {
+        width: 33.333%;
     }
-    .above-footer-right ul:nth-child(1) {
-        padding-left: 0;
-        margin-top: 5rem;
+    .u-ul-footer:first-child {
+        width: 100% !important;
     }
-    .above-footer-left ul:nth-child(2) {
-        padding-left: 3rem;
-    }
-    .above-footer-right ul:nth-child(2) {
-        padding-left: 3rem;
-        margin-top: 5rem;
+    .u-ul-footer:first-child li {
+        text-align: center;
     }
     .u-ul-footer li:not(:first-child) {
-        margin-top: 2.5rem;
+        margin-top: 1.5rem;
     }
     .btn-to-top {
-        top: 8.5rem;
-        right: 5rem;
+        top: 0;
+        right: 0;
     }
     .u-ul-footer {
         position: inherit;
+    }
+    .above-footer {
+        padding-top: 6rem;
+    }
+    .above-footer .u-ul-footer:first-child {
+        margin-bottom: 5.5rem;
     }
 }
 
