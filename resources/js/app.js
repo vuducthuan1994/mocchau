@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 
 
-    var center = isTabletScreen();
+    var isTablet = isTabletScreen();
     // SLider tin tức
     $('#owl-carousel-1').owlCarousel({
         lazyLoad: false,
@@ -39,16 +39,16 @@ $(document).ready(function() {
         nav: false,
         center: false,
         navSpeed: 500,
-        items: center ? 2 : 3,
-        dots: center ? true : false,
-        margin: 40,
+        items: isTablet ? 2 : 3,
+        dots: isTablet ? true : false,
+        margin: isTablet ? 50 : 40,
         slideSpeed: 300,
         paginationSpeed: 400
     });
     // SLider text static
     $('#owl-carousel-2').owlCarousel({
         lazyLoad: false,
-        autoplay: center ? false : false,
+        autoplay: isTablet ? false : false,
         loop: true,
         nav: false,
         navSpeed: 500,
@@ -244,9 +244,9 @@ function ScrollListener() {
         } else if (window.matchMedia('screen and (max-width: 768px)').matches) {
             var menuHeight = $('body header .menu-container').outerHeight();
             if (scrollPosition > menuHeight) {
-                $('body header .menu-container').addClass('opacity-1');
+                $('body header .menu-container').addClass('background-header-fixed');
             } else if (!$('html').hasClass('is-main-menu-open')) {
-                $('body header .menu-container').removeClass('opacity-1');
+                $('body header .menu-container').removeClass('background-header-fixed');
             }
         }
     });
