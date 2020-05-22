@@ -281,26 +281,18 @@ footer {
 .inner-footer .below-footer {
     height: 82px;
     border-top: solid 1px #2d5c57;
-    padding-top: 30px;
+    padding-top: 20px;
     max-width: 1280px;
     width: 100%;
     text-align: center;
 }
 
-.logo-footer-left p {
-    float: left;
-    font-size: 1.6rem;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 2.5px;
-    color: rgba(254, 255, 255, 0.6);
-    text-transform: uppercase;
-    margin: 0;
+.container-MA {
+    margin-top: 2rem;
 }
 
 .logo-footer-left img {
-    float: left;
-    margin-left: 1.1rem;
-    width: 5rem;
+    max-width: 21rem;
 }
 
 .above-footer {
@@ -339,7 +331,8 @@ footer {
     text-align: left;
 }
 
-.u-ul-footer li:not(:first-child) {
+.u-ul-footer li:not(:first-child),
+.u-ul-footer .container-MA li span {
     font-family: 'Open Sans';
     font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.588);
@@ -2412,6 +2405,19 @@ a.btn {
 }
 
 @media only screen and (max-width: 768px) {
+    .container-vignette-pattern .vignette-pattern-item {
+        width: 50%;
+    }
+    .container-vignette-pattern .vignette-pattern-item:nth-child(3) {
+        display: none;
+    }
+    .container-vignette-pattern .vignette-pattern-item:nth-child(4) {
+        display: none;
+    }
+    .container-MA li {
+        margin-top: 0;
+        margin: auto;
+    }
     .u-ul-footer li:not(:first-child) {
         font-size: 1.6rem;
         font-family: "Montserrat Regular";
@@ -2539,9 +2545,8 @@ a.btn {
         height: 90%;
     }
     .inner-text-slider p {
-        max-width: 620px;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        max-width: 680px;
+        font-size: 1.6rem;
     }
     .poem p {
         max-width: 768px;
@@ -2570,7 +2575,6 @@ a.btn {
     .text-slider {
         background: transparent url('../img/niem_tin_tron_ven_mobile.png') no-repeat scroll center center;
         padding-bottom: 0;
-        padding-top: 9rem;
         background-size: cover;
     }
     #customNav {
@@ -2745,11 +2749,16 @@ a.btn {
     }
     .project-feed {
         padding: 0;
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
     }
     .project-feed {
         margin-top: -6rem;
+    }
+    .project-feed .inner-project-feed {
+        padding: 0;
+        padding-bottom: 4rem;
+        background-color: #f7f4f0;
     }
     .time-post span {
         margin-left: 8px;
