@@ -1991,7 +1991,6 @@ a.btn {
 
 .container-logo-niem-tin-tron-ven img {
     max-width: 410px;
-    width: 41.1rem;
 }
 
 .project-feed {
@@ -2405,6 +2404,9 @@ a.btn {
 }
 
 @media only screen and (max-width: 768px) {
+    .logo-379 img {
+        width: 8rem;
+    }
     .container-vignette-pattern .vignette-pattern-item {
         width: 50%;
     }
@@ -2468,6 +2470,20 @@ a.btn {
     .inner-design-building-content {
         padding-left: 5rem;
         padding-top: 6rem;
+        padding-right: 4.5rem;
+        height: unset;
+        padding-bottom: 6rem;
+    }
+    .inner-design-building-content p {
+        font-size: 1.6rem;
+        font-family: "Montserrat Regular";
+        line-height: 1.875;
+        text-align: left;
+        margin-bottom: 3.5rem;
+        max-width: 314px;
+    }
+    .container-logo-niem-tin-tron-ven img {
+        max-width: 254px;
     }
     .inner-design-building-content h1 {
         font-size: 2.6rem;
@@ -2478,6 +2494,7 @@ a.btn {
     }
     .design-building {
         height: 545px;
+        margin-top: 6rem;
     }
     .design-building-left {
         width: 46.60%;
@@ -2555,13 +2572,13 @@ a.btn {
         display: none;
     }
     .inner-text-slider h1 {
-        font-size: 3.8rem;
-        font-family: "Playfair Display";
+        font-size: 2.6rem;
+        font-family: "UVFDidot";
         color: rgb(62, 53, 52);
         font-weight: bold;
         line-height: 1.579;
         text-align: center;
-        margin-bottom: 13rem;
+        margin-bottom: 1.5rem;
     }
     .container-text-slider .btn {
         display: none;
@@ -2570,7 +2587,7 @@ a.btn {
         padding-bottom: 23rem;
     }
     .logo-379 {
-        padding-top: 6.5rem;
+        padding-top: 3.5rem;
     }
     .text-slider {
         background: transparent url('../img/niem_tin_tron_ven_mobile.png') no-repeat scroll center center;
@@ -2586,7 +2603,8 @@ a.btn {
         display: block;
     }
     .map-info {
-        padding-bottom: 11rem;
+        margin-bottom: 6.5rem;
+        margin-top: 12rem;
     }
     .intro-post .time-post {
         width: 50%;
@@ -2752,9 +2770,6 @@ a.btn {
         padding-left: 4.5rem;
         padding-right: 4.5rem;
     }
-    .project-feed {
-        margin-top: -6rem;
-    }
     .project-feed .inner-project-feed {
         padding: 0;
         padding-bottom: 4rem;
@@ -2798,6 +2813,21 @@ a.btn {
     }
     .above-footer .u-ul-footer:first-child {
         margin-bottom: 5.5rem;
+    }
+    .inner-project-feed h1 {
+        font-size: 1.6rem;
+        letter-spacing: unset;
+        font-family: "UVFDidot";
+        color: rgb(255, 254, 254);
+    }
+    .inner-project-feed .project-feed-content-right h1 {
+        bottom: 1rem;
+    }
+    .intro-post p {
+        margin-bottom: 2rem;
+    }
+    .news-section {
+        margin-top: 5rem;
     }
 }
 
