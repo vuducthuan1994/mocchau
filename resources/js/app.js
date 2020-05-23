@@ -30,7 +30,9 @@ $(document).ready(function() {
 
 
 
-    var isTablet = isTabletScreen();
+    const isTablet = isTabletScreen();
+    const isMobile = isMobileScreen();
+
     // SLider tin tức
     $('#owl-carousel-1').owlCarousel({
         lazyLoad: false,
@@ -39,7 +41,7 @@ $(document).ready(function() {
         nav: false,
         center: false,
         navSpeed: 500,
-        items: isTablet ? 2 : 3,
+        items: isMobile ? 1 : (isTablet ? 2 : 3),
         dots: isTablet ? true : false,
         margin: isTablet ? 50 : 40,
         slideSpeed: 300,
@@ -74,6 +76,7 @@ $(document).ready(function() {
     popupImage();
 });
 activeRoute();
+
 
 function popupImage() {
     $('.inner-project-feed a').magnificPopup({
@@ -292,6 +295,14 @@ function textSliderController() {
 
 function isTabletScreen() {
     if (window.matchMedia('screen and (max-width: 1024px)').matches) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isMobileScreen() {
+    if (window.matchMedia('screen and (max-width: 500px)').matches) {
         return true;
     } else {
         return false;
