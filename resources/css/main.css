@@ -84,6 +84,10 @@ html {
     #tien-ich {
         scroll-margin: 110px;
     }
+    #tien-ich {
+        flex-direction: column-reverse;
+        display: flex;
+    }
     #thu-vien {
         scroll-margin: 93px;
     }
@@ -2855,6 +2859,10 @@ a.btn {
 }
 
 @media only screen and (max-width: 500px) {
+    .utilities img {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
     .u-ul-footer {
         width: 50%;
     }
@@ -2925,8 +2933,6 @@ a.btn {
     .design-building-left {
         display: block;
         width: 100%;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
     }
     .design-building-right {
         display: inline-block;
