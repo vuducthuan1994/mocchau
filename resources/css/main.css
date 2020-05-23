@@ -2402,6 +2402,11 @@ a.btn {
 }
 
 @media only screen and (max-width: 768px) {
+    .u-ul-footer .container-MA li span:last-child {
+        font-family: 'Montserrat Regular';
+        color: rgba(255, 255, 255, 0.588);
+        line-height: 1.875;
+    }
     .u-ul-footer .container-MA li:last-child span {
         max-width: 295px;
         display: block;
@@ -2431,8 +2436,8 @@ a.btn {
         display: none;
     }
     .container-MA li {
-        margin-top: 0;
         margin: auto;
+        margin-top: 1.5rem !important;
     }
     .u-ul-footer li:not(:first-child) {
         font-size: 1.6rem;
