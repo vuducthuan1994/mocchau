@@ -873,16 +873,6 @@ a.btn {
     margin-top: 23rem;
 }
 
-.map-desktop {
-    display: block;
-}
-
-.map-mobile {
-    display: none;
-    width: 100%;
-    height: auto;
-}
-
 .map-info .container-image-map {
     position: relative;
     width: 47.91%;
@@ -1141,12 +1131,6 @@ a.btn {
     .container-slogan-text {
         top: 11rem;
         right: 10rem;
-    }
-}
-
-@media only screen and (max-width: 1025px) {
-    .test {
-        display: none !important;
     }
 }
 
@@ -1931,6 +1915,7 @@ a.btn {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
+    background: transparent url(../img/map-custom.png) no-repeat scroll center center;
 }
 
 .logo-position-project {
@@ -2406,6 +2391,9 @@ a.btn {
 }
 
 @media only screen and (max-width: 768px) {
+    .custom-image-map {
+        background: transparent url(../img/map-custom-mobile.png) no-repeat scroll center center;
+    }
     .u-ul-footer .container-MA li span:last-child {
         font-family: 'Montserrat Regular';
         color: rgba(255, 255, 255, 0.588);
@@ -2536,7 +2524,7 @@ a.btn {
         width: 50%;
     }
     .map-info .map-info-content-right {
-        padding-top: 6rem;
+        padding-top: 5rem;
         padding-left: 2.5rem;
         margin-top: -6rem;
         margin-bottom: 6rem;
@@ -2664,12 +2652,6 @@ a.btn {
         display: flex;
         z-index: 100;
     }
-    .map-desktop {
-        display: none;
-    }
-    .map-mobile {
-        display: block;
-    }
     .logo-desktop {
         max-width: 55px;
     }
@@ -2775,7 +2757,7 @@ a.btn {
     }
     .map-info-content-right p {
         padding-right: 0;
-        margin-bottom: 3.5rem;
+        margin-bottom: 2.8rem;
         /* margin-right: 0; */
         font-size: 1.6rem;
         line-height: 1.875;
@@ -2859,6 +2841,97 @@ a.btn {
 }
 
 @media only screen and (max-width: 500px) {
+    .circle-fill-level-1 {
+        top: -3rem;
+        left: -2.9rem;
+    }
+    .bg-position-project .circle-fill-level-2 {
+        top: -7rem;
+        left: -7rem;
+    }
+    .logo-position-project {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+    .bg-position-project {
+        padding: 2.3rem 1.5rem;
+    }
+    .custom-image-map {
+        padding-bottom: 28.5rem;
+    }
+    .above-footer .u-ul-footer:first-child {
+        margin-bottom: 2rem;
+    }
+    .u-ul-footer .container-MA li span:first-child {
+        padding-right: 1.8rem;
+    }
+    .u-ul-footer .container-MA li:last-child span {
+        max-width: 290px;
+        display: inline-flex;
+        text-align: left;
+    }
+    .container-MA span {
+        display: inline-flex;
+        text-align: left;
+    }
+    .container-MA li {
+        margin: unset;
+    }
+    .u-ul-footer:first-child li {
+        text-align: left;
+    }
+    .map-info-content-right .custom-button {
+        display: inline-flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 80%;
+        bottom: -35px;
+    }
+    .map-info-content-right p {
+        margin-bottom: 0;
+    }
+    .header-background-image {
+        height: 77.5vh;
+    }
+    .slogan-text {
+        display: inline-block;
+    }
+    .container-slogan-text {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: 11.5rem;
+        text-align: center;
+    }
+    .button-image-project {
+        width: 26rem;
+    }
+    .detail-infomation .info-left {
+        margin-top: 12rem;
+    }
+    .detail-infomation .info-left .left .inner-right {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .detail-infomation .info-left .left .inner-left,
+    .detail-infomation .info-left .left .inner-right {
+        width: 100%;
+    }
+    .detail-infomation .info-left .left {
+        display: block;
+    }
+    .detail-infomation .info-left {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .detail-infomation .info-right img:nth-child(2) {
+        width: 83.6%;
+        height: 53%;
+    }
     .detail-infomation .info-right {
         padding-bottom: 85%;
     }
@@ -2887,6 +2960,7 @@ a.btn {
     }
     .inner-design-building-content .custom-button {
         position: absolute;
+        bottom: -35px;
     }
     .utilities h1 {
         margin-bottom: 1.5rem;
@@ -2905,6 +2979,7 @@ a.btn {
     .utilities img {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        height: 200px;
     }
     .u-ul-footer {
         width: 50%;
@@ -2919,6 +2994,7 @@ a.btn {
     .inner-footer .below-footer {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        padding-top: 4rem;
     }
     .logo-maison-footer {
         background: transparent url(../img/maison-footer-mobile-small.png) no-repeat scroll center center;
@@ -2944,25 +3020,27 @@ a.btn {
         padding-top: 20px;
         width: 100%;
     }
+    .map-info .map-info-content-right {
+        margin-bottom: 9.5rem;
+    }
     .project-feed .inner-project-feed {
         display: block;
     }
     #vi-tri.map-info {
         display: block;
-        margin-top: 12rem;
-        padding-bottom: 11rem;
+        margin-top: 6rem;
     }
     #vi-tri.map-info .container-image-map {
         width: 100%;
     }
     #vi-tri.map-info .map-info-content-right {
         width: 100%;
-        padding-left: 5rem;
+        padding-left: 3rem;
         margin-top: 0;
         position: relative;
-        padding-top: 7rem;
-        padding-right: 5rem;
-        padding-bottom: 8rem;
+        padding-top: 5rem;
+        padding-right: 3rem;
+        padding-bottom: 6.5rem;
     }
     .design-building-left img {
         height: auto;
@@ -2971,7 +3049,7 @@ a.btn {
     .design-building {
         display: block;
         height: auto;
-        margin-top: 12rem;
+        margin-top: 4.2rem;
     }
     .design-building-left {
         display: block;
@@ -2998,7 +3076,7 @@ a.btn {
         font-size: 2.8rem;
     }
     .inner-design-building-content p {
-        margin-bottom: 4.5rem;
+        margin-bottom: 0;
     }
     .detail-infomation {
         margin-top: 5rem;
@@ -3033,18 +3111,17 @@ a.btn {
         margin-top: 40px;
     }
     .container-slogan-text h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        text-align: center;
     }
     .container-slogan-text h1 {
-        font-size: 2.6rem;
-    }
-    .container-slogan-text {
-        top: 10.8rem;
-        right: 5rem;
+        font-size: 3rem;
+        text-align: center;
     }
     .test {
-        width: 0.55rem;
-        top: 8.5rem;
-        height: 33rem;
+        width: 0.35rem;
+        top: 9.8rem;
+        height: 18rem;
+        right: 1.1rem;
     }
 }
