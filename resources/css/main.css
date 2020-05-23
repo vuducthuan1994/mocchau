@@ -26,6 +26,12 @@ html {
     padding-top: 5rem !important;
 }
 
+.background-header-fixed-desktop {
+    padding-bottom: 3rem !important;
+    padding-top: 5rem !important;
+    background-color: #0d4039 !important;
+}
+
 .container-vignette-pattern {
     display: flex;
     padding-top: 2.3rem;
@@ -33,7 +39,13 @@ html {
 }
 
 .tong-dien-tich-quy-hoach {
-    max-width: 242px !important;
+    max-width: 242px;
+}
+
+@media only screen and (min-width: 1370px) {
+    .dien-tich-cac-lo-dat {
+        min-width: 475px;
+    }
 }
 
 @media only screen and (min-width: 1116px) {
@@ -77,6 +89,12 @@ html {
 }
 
 @media only screen and (max-width: 500px) {
+    .dien-tich-cac-lo-dat {
+        min-width: 122px;
+    }
+    .detail-infomation .info-left p.tong-dien-tich-quy-hoach {
+        max-width: 133px;
+    }
     #tin-tuc,
     #gioi-thieu {
         scroll-margin: 93px;
@@ -175,7 +193,7 @@ body header .menu-container {
 }
 
 .menu-container .nav li a:hover {
-    color: #38302f;
+    color: #ddb185;
     text-decoration: none;
 }
 
@@ -2391,6 +2409,15 @@ a.btn {
 }
 
 @media only screen and (max-width: 768px) {
+    .detail-infomation .info-left .dien-tich-cac-lo-dat p {
+        min-width: 160px;
+    }
+    .detail-infomation .info-left p.tong-dien-tich-quy-hoach {
+        max-width: 135px;
+    }
+    .container-MA li:last-child span:first-child {
+        height: 30px;
+    }
     .custom-image-map {
         background: transparent url(../img/map-custom-mobile.png) no-repeat scroll center center;
     }
@@ -2400,7 +2427,7 @@ a.btn {
         line-height: 1.875;
     }
     .u-ul-footer .container-MA li:last-child span {
-        max-width: 295px;
+        min-width: 300px;
         display: block;
     }
     .u-ul-footer li span:last-child {
@@ -2555,7 +2582,7 @@ a.btn {
         display: unset;
     }
     .custom-button.block-1 {
-        margin-top: 3.5rem;
+        margin-top: 3rem;
     }
     .inner-image-post-container img {
         height: 27rem;
@@ -2628,7 +2655,7 @@ a.btn {
     .test {
         width: 0.5rem;
         top: 11rem;
-        height: 26rem;
+        height: 13rem;
         right: 0.2rem;
     }
     body header .menu-container {
@@ -2699,7 +2726,7 @@ a.btn {
         line-height: 2.143;
     }
     .detail-infomation {
-        margin-top: 5.5rem;
+        margin-top: 5rem;
         display: flex;
         margin-left: 0;
         flex-direction: column-reverse;
@@ -2818,7 +2845,7 @@ a.btn {
         padding-top: 6rem;
     }
     .above-footer .u-ul-footer:first-child {
-        margin-bottom: 5.5rem;
+        margin-bottom: 4.5rem;
     }
     .inner-project-feed h1 {
         font-size: 1.6rem;
@@ -2841,6 +2868,24 @@ a.btn {
 }
 
 @media only screen and (max-width: 500px) {
+    .poem p {
+        font-weight: bold;
+    }
+    .btn-to-top {
+        top: 5.5rem;
+    }
+    .above-footer .u-ul-footer:last-child {
+        margin-top: 2.2rem;
+    }
+    .owl-dots {
+        margin-top: 2.5rem;
+    }
+    .container-logo-niem-tin-tron-ven {
+        margin-bottom: 2.5rem;
+    }
+    .text-slider {
+        margin-top: 4rem;
+    }
     .circle-fill-level-1 {
         top: -3rem;
         left: -2.9rem;
@@ -2867,7 +2912,7 @@ a.btn {
         padding-right: 1.8rem;
     }
     .u-ul-footer .container-MA li:last-child span {
-        max-width: 290px;
+        max-width: 311px;
         display: inline-flex;
         text-align: left;
     }
@@ -2994,7 +3039,7 @@ a.btn {
     .inner-footer .below-footer {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        padding-top: 4rem;
+        padding-top: 2rem;
     }
     .logo-maison-footer {
         background: transparent url(../img/maison-footer-mobile-small.png) no-repeat scroll center center;

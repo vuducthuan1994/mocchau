@@ -227,11 +227,11 @@ function ScrollListener() {
         if (window.matchMedia('screen and (min-width: 900px)').matches) {
             var headerHeight = $(".header-background-image").height();
             if ((scrollPosition + 300) > headerHeight) {
-                $('body header .menu-container').css('background-color', '#f4eee7');
+                $('body header .menu-container').addClass('background-header-fixed-desktop');
                 $('.company-logo img').addClass('scroll');
                 $('.fb-logo img').addClass('scroll');
             } else {
-                $('body header .menu-container').css('background-color', 'transparent');
+                $('body header .menu-container').removeClass('background-header-fixed-desktop');
                 $("header .nav li a").removeClass('active');
 
 
@@ -239,11 +239,12 @@ function ScrollListener() {
                 $('.fb-logo img').removeClass('scroll');
 
             }
-            if (scrollPosition === 0) {
-                $('.menu-container .nav li a ').css('color', 'rgb(244, 238, 231)');
-            } else {
-                $('.menu-container .nav li a ').css('color', 'rgb(125, 115, 114)');
-            }
+            // $('.menu-container .nav li a ').css('color', 'rgb(125, 115, 114)');
+            // if (scrollPosition === 0) {
+            //     $('.menu-container .nav li a ').css('color', 'rgb(244, 238, 231)');
+            // } else {
+            //     $('.menu-container .nav li a ').css('color', 'rgb(125, 115, 114)');
+            // }
         } else if (window.matchMedia('screen and (max-width: 768px)').matches) {
             var menuHeight = $('body header .menu-container').outerHeight();
             if (scrollPosition > menuHeight) {
