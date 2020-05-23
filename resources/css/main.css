@@ -2859,6 +2859,10 @@ a.btn {
 }
 
 @media only screen and (max-width: 500px) {
+    #tin-tuc {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
     .utilities img {
         padding-left: 1.5rem;
         padding-right: 1.5rem;

@@ -43,7 +43,7 @@ $(document).ready(function() {
         navSpeed: 500,
         items: isMobile ? 1 : (isTablet ? 2 : 3),
         dots: isTablet ? true : false,
-        margin: isTablet ? 50 : 40,
+        margin: isMobile ? 32 : (isTablet ? 50 : 40),
         slideSpeed: 300,
         paginationSpeed: 400
     });
