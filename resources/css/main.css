@@ -2859,6 +2859,23 @@ a.btn {
 }
 
 @media only screen and (max-width: 500px) {
+    .poem {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .inner-design-building-content .custom-button {
+        position: absolute;
+    }
+    .utilities h1 {
+        margin-bottom: 1.5rem;
+        margin-top: 3rem;
+    }
+    .utilities p {
+        max-width: 368px;
+        padding-bottom: 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
     #tin-tuc {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -2949,11 +2966,11 @@ a.btn {
     .inner-design-building-content {
         background-color: #0d3f39;
         height: 100%;
-        padding-left: 4rem;
+        padding-left: 3rem;
         padding-top: 0;
-        padding-right: 6.5rem;
+        padding-right: 3rem;
         padding-top: 5rem;
-        padding-bottom: 4rem;
+        padding-bottom: 9rem;
     }
     .inner-design-building-content h1 {
         font-size: 2.8rem;
