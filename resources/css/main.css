@@ -2859,6 +2859,28 @@ a.btn {
 }
 
 @media only screen and (max-width: 500px) {
+    .detail-infomation .info-right {
+        padding-bottom: 85%;
+    }
+    .detail-infomation .info-right img:nth-child(1) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .container-menu-mobie ul li a {
+        font-size: 2rem;
+    }
+    .header-right-mobile {
+        margin-top: 1.4rem;
+    }
+    .background-header-fixed {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    body header .menu-container {
+        padding-top: 1.7rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
     .poem {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -2979,7 +3001,7 @@ a.btn {
         margin-bottom: 4.5rem;
     }
     .detail-infomation {
-        margin-top: 15rem;
+        margin-top: 5rem;
     }
     .project-feed {
         padding: 0;
@@ -2997,9 +3019,6 @@ a.btn {
     .inner-image-post-container img {
         height: auto;
         object-fit: cover;
-    }
-    .detail-infomation .info-right {
-        margin-top: 20rem;
     }
     .img-banner-modal .time-post {
         width: 35%;
