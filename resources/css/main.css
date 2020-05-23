@@ -32,11 +32,6 @@ html {
     opacity: .2;
 }
 
-.container-vignette-pattern .vignette-pattern-item {
-    width: 25%;
-    height: auto;
-}
-
 .tong-dien-tich-quy-hoach {
     max-width: 242px !important;
 }
@@ -291,8 +286,20 @@ footer {
     margin-top: 2rem;
 }
 
+.u-ul-footer .container-MA li:last-child span {
+    max-width: 200px;
+    display: inline-flex;
+    margin-top: 0;
+}
+
 .logo-footer-left img {
     max-width: 21rem;
+}
+
+.vignette-pattern-item {
+    width: 25%;
+    height: 103px;
+    background: transparent url('../img/vignette-pattern.png') no-repeat scroll center center;
 }
 
 .above-footer {
@@ -2395,11 +2402,27 @@ a.btn {
 }
 
 @media only screen and (max-width: 768px) {
+    .u-ul-footer .container-MA li:last-child span {
+        max-width: 295px;
+        display: block;
+    }
+    .u-ul-footer li span:last-child {
+        margin-left: 0;
+    }
+    .u-ul-footer .container-MA li span {
+        margin-top: 0;
+        text-align: center;
+    }
+    .call-footer-right h1 {
+        display: none;
+    }
     .logo-379 img {
         width: 8rem;
     }
     .container-vignette-pattern .vignette-pattern-item {
         width: 50%;
+        height: 125px;
+        background: transparent url('../img/vignette-pattern-tablet.png') no-repeat scroll center center;
     }
     .container-vignette-pattern .vignette-pattern-item:nth-child(3) {
         display: none;
@@ -2427,6 +2450,7 @@ a.btn {
     .container-MA {
         flex-direction: column-reverse;
         display: flex;
+        margin-top: 0;
     }
     .container-MA span {
         display: block;
@@ -2508,6 +2532,7 @@ a.btn {
         margin-top: -6rem;
         margin-bottom: 6rem;
         padding-bottom: 5rem;
+        padding-right: 4.5rem;
     }
     .container-pattern-design-building {
         display: none;
@@ -2533,7 +2558,7 @@ a.btn {
         display: unset;
     }
     .custom-button.block-1 {
-        margin-top: 6.5rem;
+        margin-top: 3.5rem;
     }
     .inner-image-post-container img {
         height: 27rem;
@@ -2617,12 +2642,14 @@ a.btn {
         position: absolute;
         right: 5rem;
         top: 33rem;
+        display: none;
     }
     .header-background-image a.fb-logo {
         width: 25px;
         position: absolute;
         right: 5rem;
         top: 38rem;
+        display: none;
     }
     .header-right-mobile {
         display: flex;
@@ -2664,7 +2691,7 @@ a.btn {
     }
     .container-slogan-text {
         position: absolute;
-        top: 16.8rem;
+        top: 12rem;
         right: 5rem;
     }
     .poem {
@@ -2767,15 +2794,15 @@ a.btn {
         margin-left: 8px;
     }
     .inner-footer .below-footer {
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
     }
     .above-footer {
         display: flex;
         max-width: unset;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        padding-bottom: 7.5rem;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+        padding-bottom: 1.5rem;
     }
     .u-ul-footer {
         width: 33.333%;
@@ -2786,8 +2813,8 @@ a.btn {
     .u-ul-footer:first-child li {
         text-align: center;
     }
-    .u-ul-footer li:not(:first-child) {
-        margin-top: 1.5rem;
+    .u-ul-footer.bottom li:not(:first-child) {
+        margin-top: 1rem;
     }
     .btn-to-top {
         top: 0;
