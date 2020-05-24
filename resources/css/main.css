@@ -76,22 +76,22 @@ html {
 
 @media only screen and (max-width: 768px) {
     #tin-tuc {
-        scroll-margin: 120px;
+        scroll-margin: 135px;
     }
     #gioi-thieu {
-        scroll-margin: 200px;
+        scroll-margin: 135px;
     }
     #tien-ich {
         scroll-margin: 140px;
     }
     #thu-vien {
-        scroll-margin: 120px;
+        scroll-margin: 665px;
     }
     #kien-truc {
         scroll-margin: 135px;
     }
     #vi-tri {
-        scroll-margin: 120px;
+        scroll-margin: 185px;
     }
 }
 
@@ -104,20 +104,20 @@ html {
     }
     #tin-tuc,
     #gioi-thieu {
-        scroll-margin: 93px;
+        scroll-margin: 95px;
     }
     #tien-ich {
-        scroll-margin: 110px;
+        scroll-margin: 100px;
     }
     #tien-ich {
         flex-direction: column-reverse;
         display: flex;
     }
     #thu-vien {
-        scroll-margin: 93px;
+        scroll-margin: 95px;
     }
     #kien-truc {
-        scroll-margin: 105px;
+        scroll-margin: 95px;
     }
     #vi-tri {
         scroll-margin: 93px;
