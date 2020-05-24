@@ -583,7 +583,11 @@ a.btn {
 }
 
 .btn-close-modal:hover {
-    background-color: rgb(211, 164, 104);
+    background-color: #0b8171;
+    color: white;
+}
+
+.btn-close-modal:hover i {
     color: white;
 }
 
