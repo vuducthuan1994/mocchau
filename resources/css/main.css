@@ -169,7 +169,7 @@ body header .menu-container {
 
 .btn-to-top {
     width: 4.5rem;
-    border: solid 1px #9d9898;
+    border: solid 1px #84a09c;
     position: absolute;
     top: 0;
     right: 0;
@@ -2239,11 +2239,14 @@ a.btn {
 
 .u-ul-footer a {
     color: inherit;
+    transition: color .5s cubic-bezier(.59, .08, .385, 1);
+    -webkit-transition: color .5s cubic-bezier(.59, .08, .385, 1);
+    -ms-transition: color .5s cubic-bezier(.59, .08, .385, 1);
 }
 
 .u-ul-footer a:hover {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
 .call-footer-right:hover {
