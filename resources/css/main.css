@@ -1204,7 +1204,7 @@ a.btn {
     width: 188px;
     height: 50px;
     padding-left: 30px;
-    border-color: #4593a5;
+    border-color: #7b9ab9;
     border-width: 1px;
     border-style: solid;
     border-radius: 30px;
@@ -1474,9 +1474,9 @@ a.btn {
     width: 100%;
     height: 100%;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-family: "Montserrat SemiBold";
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     text-align: left;
     text-transform: uppercase;
     line-height: 50px;
