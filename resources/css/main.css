@@ -28,8 +28,13 @@ html {
 
 .background-header-fixed-desktop {
     padding-bottom: 3rem !important;
-    padding-top: 5rem !important;
+    padding-top: 3rem !important;
     background-color: #0d4039 !important;
+}
+
+.background-header-fixed-desktop .logo-desktop {
+    width: 70px;
+    height: auto;
 }
 
 .container-vignette-pattern {
@@ -38,13 +43,15 @@ html {
     opacity: .2;
 }
 
-.tong-dien-tich-quy-hoach {
-    max-width: 242px;
-}
-
 @media only screen and (min-width: 1370px) {
+    .detail-infomation .info-left .dien-tich-duong-noi-bo p {
+        min-width: 285px;
+    }
     .dien-tich-cac-lo-dat {
-        min-width: 475px;
+        min-width: 370px;
+    }
+    .detail-infomation .info-left p.tong-dien-tich-quy-hoach {
+        max-width: 242px;
     }
 }
 
@@ -57,7 +64,7 @@ html {
         scroll-margin: 156px;
     }
     #thu-vien {
-        scroll-margin: 145px;
+        scroll-margin: 230px;
     }
     #kien-truc {
         scroll-margin: 160px;
@@ -199,6 +206,10 @@ body header .menu-container {
 
 .logo-desktop {
     margin-top: -1.3rem;
+    z-index: 100;
+    transition: all .5s cubic-bezier(.59, .08, .385, 1);
+    -webkit-transition: all .5s cubic-bezier(.59, .08, .385, 1);
+    -ms-transition: all .5s cubic-bezier(.59, .08, .385, 1);
 }
 
 .header-right-mobile {
@@ -736,8 +747,7 @@ a.btn {
 }
 
 .list-group-info {
-    /* padding-right: 3.5rem; */
-    max-width: 680px;
+    max-width: 574px;
 }
 
 .list-group-info .d-flex:first-child {
@@ -745,13 +755,8 @@ a.btn {
 }
 
 .list-group-info .d-flex:nth-child(2) {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
-
-
-/* .list-group-info .d-flex:nth-child(2) div:last-child {
-    padding-right: 9rem;
-} */
 
 .list-group-info h1 {
     font-size: 5rem;
@@ -858,6 +863,13 @@ a.btn {
     }
 }
 
+@media only screen and (min-width: 1300px) {
+    .above-footer .u-ul-footer:nth-child(2),
+    .above-footer .u-ul-footer:nth-child(3) {
+        padding-left: 4rem;
+    }
+}
+
 
 /* DONE RESPONSIVE VIGNETTE */
 
@@ -903,6 +915,7 @@ a.btn {
     background-color: #0d4039;
     padding-left: 8rem;
     margin-top: 8rem;
+    padding-bottom: 12rem;
     position: relative;
 }
 
@@ -930,12 +943,13 @@ a.btn {
     color: rgb(255, 255, 255);
     line-height: 1.579;
     text-align: left;
-    margin-top: 9rem;
+    margin-top: 10rem;
 }
 
 .map-info-content-right h1 strong {
     color: #ddb185;
     font-weight: normal !important;
+    margin: 0;
 }
 
 .map-info-content-right p {
@@ -945,7 +959,7 @@ a.btn {
     line-height: 1.875;
     text-align: left;
     padding-right: 42%;
-    margin-bottom: 4.5rem;
+    margin-bottom: 5.2rem;
 }
 
 .Absolute-Center {
