@@ -97,7 +97,7 @@ html {
 
 @media only screen and (max-width: 500px) {
     .dien-tich-cac-lo-dat {
-        min-width: 122px;
+        min-width: 195px;
     }
     .detail-infomation .info-left p.tong-dien-tich-quy-hoach {
         max-width: 133px;
@@ -2882,6 +2882,12 @@ a.btn {
 }
 
 @media only screen and (max-width: 500px) {
+    .detail-infomation .info-left .dien-tich-cac-lo-dat p {
+        max-width: 122px;
+    }
+    .detail-infomation .info-left .dien-tich-duong-noi-bo p {
+        min-width: 160px;
+    }
     .poem p {
         font-weight: bold;
     }
